@@ -39,7 +39,8 @@ RUN apt-get update && apt-get -y --force-yes install \
   cmake \
   git \
   pkg-config \
-  mingw32
+  mingw32 \
+  mingw-w64
 
 # Set up wine
 # RUN dpkg --add-architecture i386 && \
