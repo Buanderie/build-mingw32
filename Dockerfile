@@ -17,7 +17,7 @@ RUN apt-get update && apt-get -y --force-yes install \
   intltool \
   libffi-dev \
   libgdk-pixbuf2.0-dev \
-  libtool-bin \
+  libtool \
   libltdl-dev \
   libssl-dev \
   libxml-parser-perl \
