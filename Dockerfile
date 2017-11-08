@@ -34,7 +34,6 @@ RUN apt-get update && apt-get -y --force-yes install \
   sed \
   unzip \
   wget \
-  wine \
   xz-utils \
   build-essential \
   cmake \
@@ -43,9 +42,9 @@ RUN apt-get update && apt-get -y --force-yes install \
   mingw32
 
 # Set up wine
-RUN dpkg --add-architecture i386 && \
-  apt-get update && \
-  apt-get install -y wine32
-ENV WINEARCH win32
-RUN wine hostname
+# RUN dpkg --add-architecture i386 && \
+#  apt-get update && \
+#  apt-get install -y wine32
+# ENV WINEARCH win32
+# RUN wine hostname
 
